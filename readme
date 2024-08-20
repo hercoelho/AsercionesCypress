@@ -1,0 +1,52 @@
+1. Aserciones de existencia y visibilidad:
+
+'exist': Verifica que el elemento existe en el DOM.
+'be.visible': Comprueba que el elemento es visible para el usuario.
+'not.exist': Asegura que el elemento no está presente en el DOM.
+
+
+2. Aserciones de estado:
+
+'be.checked': Para checkboxes, verifica que está marcado.
+'be.disabled': Comprueba si un elemento está deshabilitado.
+'have.class': Verifica si el elemento tiene una clase CSS específica.
+
+
+3. Aserciones de contenido:
+
+'have.text': Comprueba el texto exacto de un elemento.
+'contain': Verifica si el elemento contiene un texto parcial.
+'have.value': Para inputs, comprueba el valor actual.
+
+
+4. Aserciones de atributos:
+
+'have.attr': Verifica si un elemento tiene un atributo específico con un valor determinado.
+
+
+5. Aserciones de longitud:
+
+'have.length': Útil para verificar el número de elementos en una colección.
+
+
+6. Aserciones numéricas:
+
+'be.greaterThan', 'be.lessThan': Para comparaciones numéricas.
+
+
+7. Aserciones de CSS:
+
+'have.css': Verifica propiedades CSS específicas.
+
+
+8. Combinación de aserciones:
+
+Puedes encadenar múltiples aserciones usando and().
+
+
+
+Puntos importantes:
+
+Puedes negar cualquier aserción añadiendo not antes, por ejemplo: should('not.be.visible').
+Cypress espera automáticamente hasta que la aserción sea verdadera o se agote el tiempo de espera.
+Puedes personalizar el mensaje de error pasando un mensaje como tercer argumento: should('exist', 'El elemento debería existir').
